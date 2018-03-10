@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">BeerAdvisor</string>
+
+    <string name="findBeer">Find Beer!</string>
+
+    <string name="brands"></string>
+
+    <!-- list of items for our beer colour spinner -->
+    <string-array name="beer_colours">
+        <item>Light</item>
+        <item>Amber</item>
+        <item>Brown</item>
+        <item>Dark</item>
+    </string-array>
+
+</resources>
