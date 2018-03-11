@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MessagePass</string>
+    <string name="send">Send Message</string>
+    <string name="receiveMessageActivityTitle">Message Receiver</string>
+</resources>
