@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StatisticsHelper</string>
+
+    <string name="standard_deviation">Standard Deviation</string>
+    <string name="calculateButton">Calculate</string>
+    <string name="addData">Add Data</string>
+    <string name="back">Back</string>
+    <string name="dataset1">Data Set 1</string>
+    <string name="dataset2">Data Set 2</string>
+</resources>

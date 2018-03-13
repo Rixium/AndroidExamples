@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:padding="20dp"
+        android:textSize="20dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dataset 1"
+            android:layout_weight="1"
+            android:id="@+id/data1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dataset 2"
+            android:layout_toRightOf="@id/data1"
+            android:id="@+id/data2"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:id="@+id/dataSet1"
+            android:layout_width="wrap_content"
+            android:ems="5"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/data1"/>
+
+        <Spinner
+            android:id="@+id/dataSet2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:ems="5"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/data2"
+            android:layout_alignLeft="@id/data2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addData"
+            android:textSize="10dp"
+            android:onClick="onButtonPress"
+            android:id="@+id/data1Button"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addData"
+            android:textSize="10dp"
+            android:onClick="onButtonPress"
+            android:id="@+id/data2Button"
+            />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateButton"
+        android:onClick="onButtonPress"
+        android:id="@+id/calculateButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculation"/>
+
+</LinearLayout>
+
